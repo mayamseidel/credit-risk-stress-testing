@@ -2,7 +2,7 @@
 
 ## Public Company Portfolio Analysis
 
-![Portfolio Expected Loss Under Stress](portfolio-expected-loss.png)
+![Portfolio Expected Loss Under Stress](image.png)
 
 An illustrative corporate credit-risk framework analysing six large US-listed companies across different sectors using FY2025 financial data.
 
