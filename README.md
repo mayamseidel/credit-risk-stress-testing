@@ -6,7 +6,7 @@
 
 ### Portfolio Expected Loss Under Stress
 
-![Portfolio Expected Loss Under Stress](image.png)
+![Portfolio Expected Loss Under Stress](expected-loss-under-stress.png)
 
 ### Net Leverage Under Stress Scenarios
 
