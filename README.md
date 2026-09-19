@@ -3,6 +3,7 @@
 ## Public Company Portfolio Analysis
 
 ![Portfolio Expected Loss Under Stress](image.png)
+![Net Leverage Under Stress Scenarios](net-leverage-stress.png)
 
 An illustrative corporate credit-risk framework analysing six large US-listed companies across different sectors using FY2025 financial data.
 
