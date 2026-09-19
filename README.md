@@ -2,6 +2,8 @@
 
 ## Public Company Portfolio Analysis
 
+![Portfolio Expected Loss Under Stress](portfolio-expected-loss.png)
+
 An illustrative corporate credit-risk framework analysing six large US-listed companies across different sectors using FY2025 financial data.
 
 The project combines financial statement analysis, credit metrics, stress testing and expected-loss modelling to examine borrower-level and portfolio-level credit risk.
