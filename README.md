@@ -22,16 +22,23 @@ The project combines financial statement analysis, credit metrics, stress testin
 
 This project develops a structured credit-risk framework using publicly available financial data from six companies:
 
-- Verizon Communications — Telecommunications
-- Exxon Mobil — Energy
-- PepsiCo — Consumer Staples
-- Cisco Systems — Technology
-- Union Pacific — Industrials
-- FedEx — Transportation
+- Verizon Communications: Telecommunications
+- Exxon Mobil: Energy
+- PepsiCo: Consumer Staples
+- Cisco Systems: Technology
+- Union Pacific: Industrials
+- FedEx: Transportation
 
 The analysis examines how financial performance, leverage, liquidity and financing conditions affect corporate credit profiles and how borrower-level risks translate into portfolio-level exposure.
 
----
+## Why i chose this method
+I wanted to use measures that would let me compare the financial strength of companies from very different sectors. Leverage, interest coverage and liquidity gave me a simple way to look at how much debt each company carries, how comfortably it can meet its interest payments and how much short-term financial flexibility it has.
+
+I then used stress testing to see how these measures would change if earnings fell, interest costs increased and cash decreased. Rather than trying to predict whether a company would actually default, I wanted to see how sensitive its credit profile was to a deterioration in its financial position. This felt more appropriate given the small number of companies in the dataset.
+
+I used the PD × LGD × EAD approach to take the analysis one step further and estimate what these credit risks could mean for potential losses across the portfolio. The assumptions are deliberately simple and transparent rather than trying to replicate a bank's internal credit model.
+
+Overall, I chose this approach because it allowed me to move from basic financial statement data to borrower-level risk, stress testing and finally portfolio-level expected losses.
 
 ## Analysis
 
@@ -74,17 +81,11 @@ The model uses an illustrative 40% LGD assumption and total debt as a proxy for 
 
 ## Data
 
-Financial data is sourced from the companies' FY2025 Form 10-K filings submitted to the US Securities and Exchange Commission.
-
 All financial figures are presented in US$ millions.
-
-EBITDA is standardised using reported financial statement components to improve comparability across companies.
 
 ---
 
-## Methodology
-
-The project follows a five-stage framework:
+## My chosen method:
 
 1. Construct a multi-sector corporate debt portfolio
 2. Calculate borrower-level credit metrics
@@ -92,36 +93,33 @@ The project follows a five-stage framework:
 4. Stress-test financial performance and credit metrics
 5. Translate the results into illustrative expected-loss estimates
 
-The model is designed to demonstrate the application of financial modelling and credit-risk concepts rather than replicate a professional rating agency or lender's internal methodology.
-
 ---
 
-## Key Takeaways
+## What I learnt / key bits
 
 The analysis demonstrates several important features of corporate credit risk:
 
-- Leverage and debt-servicing capacity vary materially across borrowers.
-- Liquidity provides an additional dimension of credit resilience beyond leverage.
 - Simultaneous deterioration in earnings, financing costs and cash can materially weaken credit metrics.
 - Portfolio-level risk can remain concentrated even when borrowers operate across different sectors.
 - Quantitative ratios need to be considered alongside company-specific and sector-specific qualitative risks.
 
 ---
 
-## Limitations
+## Future Development:
 
 The model uses a relatively small sample of six companies and a single FY2025 reporting period.
 
-The credit-resilience score, probability-of-default mapping, stress assumptions, LGD and EAD methodology are illustrative rather than empirically estimated.
-
-The model therefore should not be interpreted as a credit rating, investment recommendation or prediction of actual default.
+Historical data: Extend the dataset across multiple years to analyse changes in credit quality through different points of the economic cycle.
+Market-based measures: Incorporate credit ratings, bond spreads and CDS data where available to compare the model's results with external and market-based measures of credit risk.
+Statistical PD modelling: Replace the current illustrative PD bands with probabilities estimated from a larger historical dataset of companies and defaults.
+Company-specific stress tests: Replace the uniform stress assumptions with scenarios based on the main risks facing each sector, such as commodity prices for energy companies or economic activity and fuel costs for transportation companies.
 
 ---
 
-## Tools
+## Tools used in my analysis
 
 - Python
 - pandas
 - NumPy
 - Matplotlib
-- Jupyter / Kaggle Notebooks
+- Kaggle Notebooks
