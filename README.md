@@ -110,8 +110,11 @@ The analysis demonstrates several important features of corporate credit risk:
 The model uses a relatively small sample of six companies and a single FY2025 reporting period.
 
 Historical data: Extend the dataset across multiple years to analyse changes in credit quality through different points of the economic cycle.
+
 Market-based measures: Incorporate credit ratings, bond spreads and CDS data where available to compare the model's results with external and market-based measures of credit risk.
+
 Statistical PD modelling: Replace the current illustrative PD bands with probabilities estimated from a larger historical dataset of companies and defaults.
+
 Company-specific stress tests: Replace the uniform stress assumptions with scenarios based on the main risks facing each sector, such as commodity prices for energy companies or economic activity and fuel costs for transportation companies.
 
 ---
